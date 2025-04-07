@@ -31,3 +31,11 @@ lib/
 # VCS(버전 관리 시스템) 관련 캐시 및 폴더 제외
 .vscode/
 .idea/
+
+# 불필요한 파일 및 폴더 제외 (이미지에서 확인한 사항)
+.gitignore
+README.md
+OmniversalEngineCalc.pro.user
+git
+ls
+build/

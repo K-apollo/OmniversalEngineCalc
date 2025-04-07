@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QStackedWidget" name="stackedWidget">
+      <widget class="QWidget" name="page01"/>
+      <widget class="QWidget" name="page02"/>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>Calculator</string>
+    </property>
+    <addaction name="actionStandard"/>
+    <addaction name="actionScientific"/>
+    <addaction name="actionProgrammer"/>
+    <addaction name="actionGraph"/>
+    <addaction name="actionDateAndTime"/>
+   </widget>
+   <widget class="QMenu" name="menuConverter">
+    <property name="title">
+     <string>Converter</string>
+    </property>
+    <addaction name="actionCurrency_Exchange"/>
+    <addaction name="actionVolume"/>
+    <addaction name="actionLength"/>
+    <addaction name="actionWeight_and_Mass"/>
+    <addaction name="actionTemperature"/>
+    <addaction name="actionEnergy"/>
+    <addaction name="actionArea"/>
+    <addaction name="actionSpeed"/>
+    <addaction name="actionTime"/>
+    <addaction name="actionPower"/>
+    <addaction name="actionData"/>
+    <addaction name="actionPressure"/>
+    <addaction name="actionAngle"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuConverter"/>
+  </widget>
+  <action name="actionStandard">
+   <property name="text">
+    <string>Standard</string>
+   </property>
+   <property name="toolTip">
+    <string>Standard</string>
+   </property>
+  </action>
+  <action name="actionScientific">
+   <property name="text">
+    <string>Scientific</string>
+   </property>
+   <property name="toolTip">
+    <string>Scientific</string>
+   </property>
+  </action>
+  <action name="actionGraph">
+   <property name="text">
+    <string>Graph</string>
+   </property>
+   <property name="toolTip">
+    <string>Graph</string>
+   </property>
+  </action>
+  <action name="actionDateAndTime">
+   <property name="text">
+    <string>Date &amp; Time</string>
+   </property>
+  </action>
+  <action name="actionCurrency_Exchange">
+   <property name="text">
+    <string>Currency Exchange</string>
+   </property>
+  </action>
+  <action name="actionVolume">
+   <property name="text">
+    <string>Volume</string>
+   </property>
+  </action>
+  <action name="actionLength">
+   <property name="text">
+    <string>Length</string>
+   </property>
+  </action>
+  <action name="actionWeight_and_Mass">
+   <property name="text">
+    <string>Weight &amp; Mass</string>
+   </property>
+  </action>
+  <action name="actionTemperature">
+   <property name="text">
+    <string>Temperature</string>
+   </property>
+  </action>
+  <action name="actionEnergy">
+   <property name="text">
+    <string>Energy</string>
+   </property>
+  </action>
+  <action name="actionArea">
+   <property name="text">
+    <string>Area</string>
+   </property>
+  </action>
+  <action name="actionSpeed">
+   <property name="text">
+    <string>Speed</string>
+   </property>
+  </action>
+  <action name="actionTime">
+   <property name="text">
+    <string>Time</string>
+   </property>
+  </action>
+  <action name="actionPower">
+   <property name="text">
+    <string>Power</string>
+   </property>
+  </action>
+  <action name="actionData">
+   <property name="text">
+    <string>Data</string>
+   </property>
+  </action>
+  <action name="actionPressure">
+   <property name="text">
+    <string>Pressure</string>
+   </property>
+  </action>
+  <action name="actionAngle">
+   <property name="text">
+    <string>Angle</string>
+   </property>
+  </action>
+  <action name="actionProgrammer">
+   <property name="text">
+    <string>Programmer</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

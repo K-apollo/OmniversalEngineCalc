@@ -1,0 +1,33 @@
+# 일반적인 빌드 파일 및 실행 파일 제외
+*.o
+*.obj
+*.dll
+*.so
+*.exe
+*.a
+*.lib
+*.bin
+
+# Qt 관련 빌드 파일 제외
+*.moc
+*.qmake.stash
+Makefile
+CMakeCache.txt
+CMakeFiles/
+moc_*.cpp
+ui_*.h
+
+# Qt 프로젝트 폴더 내에서 생성되는 빌드 폴더 제외
+build/
+bin/
+lib/
+
+# Qt Creator 사용자 설정 파일 제외
+*.pro.user
+*.pro.user.*
+*.qbs.user
+*.creator.user
+
+# VCS(버전 관리 시스템) 관련 캐시 및 폴더 제외
+.vscode/
+.idea/

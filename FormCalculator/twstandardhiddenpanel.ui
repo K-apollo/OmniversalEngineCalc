@@ -14,24 +14,62 @@
    <string>TabWidget</string>
   </property>
   <property name="currentIndex">
-   <number>1</number>
+   <number>0</number>
   </property>
   <widget class="QWidget" name="tab01History">
    <attribute name="title">
     <string>History</string>
    </attribute>
    <layout class="QGridLayout" name="gridLayout">
-    <item row="0" column="0">
-     <widget class="QTableWidget" name="twHistory"/>
-    </item>
-    <item row="1" column="0">
+    <item row="1" column="1">
      <widget class="QPushButton" name="btnClear01">
       <property name="text">
        <string/>
       </property>
       <property name="icon">
-       <iconset theme="QIcon::ThemeIcon::EditDelete"/>
+       <iconset>
+        <normaloff>../icon/delete_button.png</normaloff>../icon/delete_button.png</iconset>
       </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QPushButton" name="pushButton">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../icon/refresh_button.png</normaloff>../icon/refresh_button.png</iconset>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0" colspan="2">
+     <widget class="QTableWidget" name="twHistory">
+      <column>
+       <property name="text">
+        <string>No.</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Input</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Output</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Date</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Time</string>
+       </property>
+      </column>
      </widget>
     </item>
    </layout>
@@ -41,18 +79,56 @@
     <string>Memory</string>
    </attribute>
    <layout class="QGridLayout" name="gridLayout_2">
-    <item row="1" column="0">
+    <item row="1" column="1">
      <widget class="QPushButton" name="btnClear02">
       <property name="text">
        <string/>
       </property>
       <property name="icon">
-       <iconset theme="QIcon::ThemeIcon::EditDelete"/>
+       <iconset>
+        <normaloff>../icon/delete_button.png</normaloff>../icon/delete_button.png</iconset>
       </property>
      </widget>
     </item>
-    <item row="0" column="0">
-     <widget class="QTableWidget" name="twMemorry"/>
+    <item row="1" column="0">
+     <widget class="QPushButton" name="pushButton_2">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../icon/refresh_button.png</normaloff>../icon/refresh_button.png</iconset>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0" colspan="2">
+     <widget class="QTableWidget" name="twMemorry">
+      <column>
+       <property name="text">
+        <string>No.</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Input</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Output</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Date</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Time</string>
+       </property>
+      </column>
+     </widget>
     </item>
    </layout>
   </widget>

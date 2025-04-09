@@ -15,6 +15,9 @@ public:
     explicit twStandardHiddenPanel(QWidget *parent = nullptr);
     ~twStandardHiddenPanel();
 
+signals:
+    void tabChanged(int index);  // 탭 변경 시 신호 발생
+
 private:
     Ui::twStandardHiddenPanel *ui;
 };

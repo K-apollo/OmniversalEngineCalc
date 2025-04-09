@@ -6,9 +6,8 @@ twStandardHiddenPanel::twStandardHiddenPanel(QWidget *parent):
     ui(new Ui::twStandardHiddenPanel)
 {
     ui->setupUi(this);
-    // Memory, History 탭 추가
-    this->addTab(new QWidget(), "Memory");
-    this->addTab(new QWidget(), "History");
+
+    connect(this, &QTabWidget::currentChanged, this, &twStandardHiddenPanel::tabChanged);
 }
 
 twStandardHiddenPanel::~twStandardHiddenPanel()

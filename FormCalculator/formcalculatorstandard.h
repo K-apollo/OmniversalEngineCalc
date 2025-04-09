@@ -3,7 +3,8 @@
 
 #include <QWidget>
 #include <QComboBox>
-#include <QDialog>
+#include <QDockWidget>
+#include <QMainWindow>
 #include "twstandardhiddenpanel.h"
 
 namespace Ui {
@@ -19,12 +20,14 @@ public:
     ~FormCalculatorStandard();
 
 private slots:
-    void handleComboBoxChange(const QString &text);  // 콤보박스 선택 변경 시 실행되는 함수
+    void handleComboBoxChange(const QString &text);  // QComboBox 선택 시 실행
+    void handleTabChange(int index);  // QTabWidget 선택 시 실행
+    void handleDockWidgetClose();  // QDockWidget 닫을 때 Default 값 설정
 
 private:
     Ui::FormCalculatorStandard *ui;
-    QDialog *panelDialog;  // 별도의 창을 생성하는 변수
-    twStandardHiddenPanel *panel;  // TabWidget을 창으로 실행하도록 설정
+    twStandardHiddenPanel *panel;  // 탭 패널을 먼저 선언
+    QDockWidget *dockWidget;  // QMainWindow에 부착되는 도킹 위젯
 };
 
 #endif // FORMCALCULATORSTANDARD_H

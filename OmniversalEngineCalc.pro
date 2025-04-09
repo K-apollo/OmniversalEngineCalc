@@ -66,6 +66,10 @@ FORMS += \
     FormConverter\formconverterweightandmass.ui \
     mainwindow.ui
 
+DISTFILES += \      # 이미지 파일들
+    icon/delete_button.png \
+    icon/refresh_button.png
+
 # 배포에 대한 기본값
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin

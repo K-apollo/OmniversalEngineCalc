@@ -9,6 +9,7 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    FormCalculator/twstandardhiddenpanel.cpp \
     FormCalculator\formcalculatordateandtime.cpp \
     FormCalculator\formcalculatorgraph.cpp \
     FormCalculator\formcalculatorprogrammer.cpp \
@@ -28,6 +29,7 @@ SOURCES += \
     mainwindow.cpp
 
 HEADERS += \
+    FormCalculator/twstandardhiddenpanel.h \
     FormCalculator\formcalculatordateandtime.h \
     FormCalculator\formcalculatorgraph.h \
     FormCalculator\formcalculatorprogrammer.h \
@@ -46,6 +48,7 @@ HEADERS += \
     mainwindow.h
 
 FORMS += \
+    FormCalculator/twstandardhiddenpanel.ui \
     FormCalculator\formcalculatordateandtime.ui \
     FormCalculator\formcalculatorgraph.ui \
     FormCalculator\formcalculatorprogrammer.ui \
